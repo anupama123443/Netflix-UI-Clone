@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Netflix  India- Watch TV Show Online, Watch Movies Online  </title>
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='red'>N</text></svg>"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="shortcut icon" href="Netflex logo.png" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 
 <body>
-    <div class=background>
+    <!-- HEADER & HERO SECTION -->
+    <div class="background">
+        <img src="/home/paradox/Project/Netflix-UI-Clone/Netflex-Background.jpg" alt="My Image" style="width:100%">
         <nav class="navbar">
-            <img class="logo" src="logo.svg" alt="netflix ">
+            <div class="logo">NETFLIX</div>
             <span class="button">
                 <button class="english">English</button>
                 <div class="sign-in">Sign In</div>
@@ -23,44 +24,175 @@
         <div class="main-container">
             <div class="container">
                 <h1 class="main-title">Unlimited movies, TV shows and more</h1>
-                <h2 class="main-sub-title">Starts at $149. Cancel anytime. </h2>
+                <h2 class="main-sub-title">Starts at ₹149. Cancel anytime.</h2>
                 <p class="para">Ready to watch? Enter your email to create or restart your membership.</p>
                 <div class="box">
-                    <input class="email-address" type="text" placeholder="Email address">
-                    <button class="get-started">Get Started &gt;</button>
-
+                    <input class="email-address" type="email" placeholder="Email address">
+                    <button class="get-started">Get Started ></button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="seperation"></div>
 
-  <div class="main-second-container">
-        <h2 class="trending">Trending Now </h2>
-        <span  >
-            <select class="india" name="country" id="">
-                <option value="">India</option>
-                <option value=""> Global</option>p
-            </select>
-            <select class="movies" name="Movies" id="">
-                <option value="">Movies</option>
-                <option value="">TV Shows</option>
-            </select>
-        </span>
-        <div class="second-container">
-            <span > <img src="1.jpg" alt="First">
-                <span>1</span>
+    <!-- TRENDING SECTION -->
+    <div class="main-second-container">
+        <div class="filter-section">
+            <h2 class="trending">Trending Now</h2>
+            <span class="filters">
+                <select class="india" id="countryFilter">
+                    <option value="">India</option>
+                    <option value="global">Global</option>
+                </select>
+                <select class="movies" id="typeFilter">
+                    <option value="">Movies</option>
+                    <option value="">TV Shows</option>
+                </select>
             </span>
-            <span> <img src="2.jpg" alt="Second"></span>
-            <span>  <img src="3.jpg" alt="Third"></span>
-            <span> <img src="4.jpg" alt="fourth"></span>
-            <span> <img src="5.jpg" alt="fifth"></span>
-
         </div>
 
+        <div class="second-container" id="trendingContainer">
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Trending Movie 1">
+                <div class="card-overlay">
+                    <button class="play-btn">▶ Play</button>
+                    <button class="add-btn">✚</button>
+                </div>
+                <p class="movie-title">Blockbuster Action</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Trending Movie 2">
+                <div class="card-overlay">
+                    <button class="play-btn">▶ Play</button>
+                    <button class="add-btn">✚</button>
+                </div>
+                <p class="movie-title">Drama Series</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Trending Movie 3">
+                <div class="card-overlay">
+                    <button class="play-btn">▶ Play</button>
+                    <button class="add-btn">✚</button>
+                </div>
+                <p class="movie-title">Comedy Night</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300?text=Movie+4" alt="Trending Movie 4">
+                <div class="card-overlay">
+                    <button class="play-btn">▶ Play</button>
+                    <button class="add-btn">✚</button>
+                </div>
+                <p class="movie-title">Thriller Mystery</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x300?text=Movie+5" alt="Trending Movie 5">
+                <div class="card-overlay">
+                    <button class="play-btn">▶ Play</button>
+                    <button class="add-btn">✚</button>
+                </div>
+                <p class="movie-title">Romance Story</p>
+            </div>
+        </div>
     </div>
 
+    <!-- MORE REASONS TO JOIN SECTION -->
+    <div class="reasons-section">
+        <h2 class="section-title">More Reasons to Join</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">📺</div>
+                <h3 class="reason-title">Enjoy on Your TV</h3>
+                <p class="reason-description">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. Stunning picture quality in 4K Ultra HD.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">📱</div>
+                <h3 class="reason-title">Watch Anywhere</h3>
+                <p class="reason-description">Stream unlimited movies and TV shows on your phone, tablet, laptop and more. Download and watch offline anytime.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">👨‍👩‍👧‍👦</div>
+                <h3 class="reason-title">Create Profiles for Kids</h3>
+                <p class="reason-description">Send kids on adventures with their favorite characters in a space made just for them. Free with your membership.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">📥</div>
+                <h3 class="reason-title">Download Your Favorites</h3>
+                <p class="reason-description">Save your favorites and always have something to watch. Stream on your phone or tablet without an internet connection.</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+    <div class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <div class="faq-question">What is Netflix?</div>
+                <div class="faq-answer">
+                    Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices. You can watch anytime and anywhere with an internet connection.
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">How much does Netflix cost?</div>
+                <div class="faq-answer">
+                    Netflix has flexible plans to fit your budget. Plans start at ₹149/month for basic access and go up to ₹599/month for premium 4K Ultra HD. Watch on multiple devices with no ads. Cancel anytime.
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">Where can I watch?</div>
+                <div class="faq-answer">
+                    Watch anywhere, anytime on your favorite devices - Smart TV, tablet, phone, laptop and gaming consoles. Use the Netflix app or visit netflix.com. You can stream on up to 4 screens simultaneously depending on your plan.
+                </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">How do I cancel?</div>
+                <div class="faq-answer">
+                    Netflix is flexible. There are no annoying contracts and no commitments. You can cancel your account anytime with just a click of a button. No cancellation fees – cancel online in seconds.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
